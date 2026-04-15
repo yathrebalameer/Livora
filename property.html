@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livora | Properties</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Livora | Property Details</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -14,40 +14,60 @@
             <ul class="nav-links show">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="listings.html">Properties</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="search-section">
-        <h2>Find Properties</h2>
+    <section class="property-details">
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Luxury Villa">
+        </div>
 
-        <div class="search-box">
-            <input type="text" id="searchCity" placeholder="City">
+        <div class="property-info">
+            <h1>Luxury Villa in Riyadh</h1>
+            <p class="price">SAR 3,200,000</p>
+            <p class="location">📍 Al Yasmin, Riyadh, Saudi Arabia</p>
 
-            <select id="searchType">
-                <option value="">All Types</option>
-                <option>Apartment</option>
-                <option>Villa</option>
-                <option>Office</option>
-            </select>
+            <div class="features">
+                <div>🛏 5 Bedrooms</div>
+                <div>🛁 4 Bathrooms</div>
+                <div>📐 450 m²</div>
+                <div>🚗 2 Parking</div>
+            </div>
 
-            <select id="searchPurpose">
-                <option value="">Buy / Rent</option>
-                <option>Buy</option>
-                <option>Rent</option>
-            </select>
+            <div class="description">
+                <h2>Description</h2>
+                <p>
+                    Discover this stunning luxury villa located in one of Riyadh’s most premium neighborhoods.
+                    Designed with modern architecture, spacious interiors, and elegant finishes,
+                    this property is ideal for families looking for comfort and prestige.
+                </p>
+            </div>
 
-            <button onclick="filterProperties()">Search</button>
+            <div class="contact-actions">
+                <a href="https://wa.me/966500000000" target="_blank" class="btn">
+                    Contact on WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="featured-properties">
-        <h2>Available Properties</h2>
-        <div class="property-grid" id="propertyContainer"></div>
+    <section class="contact-form-section">
+        <h2>Request More Information</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Inquiry</button>
+        </form>
     </section>
- <footer>
+
+    <footer>
         <p>© 2026 Livora. All rights reserved.</p>
     </footer>
-    <script src="listings.js"></script>
+
 </body>
 </html>

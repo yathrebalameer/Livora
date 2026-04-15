@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+}
+
+.top-bar {
+    background: white;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0B5D3B;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.filters {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    background: white;
+}
+
+.filters button {
+    padding: 10px 16px;
+    border: none;
+    background: #0B5D3B;
+    color: white;
+    border-radius: 8px;
+}
+
+.ads-list {
+    padding: 15px;
+}
+
+.ad-card {
+    display: flex;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+
+.ad-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.ad-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.price {
+    color: #0B5D3B;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.specs {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.location {
+    color: gray;
+}
+
+.details-container {
+    padding: 15px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 12px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.price-box,
+.details-box,
+.features-box {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.detail-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.features-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-box li {
+    padding: 8px 0;
+}
+
+.sticky-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.whatsapp,
+.call {
+    flex: 1;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.whatsapp {
+    background: #0B5D3B;
+}
+
+.call {
+    background: #444;
+}
