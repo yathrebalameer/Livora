@@ -54,7 +54,7 @@ function renderProperties(data) {
                 <h3>${property.title}</h3>
                 <p>${property.price}</p>
                 <p>${property.city} | ${property.type} | ${property.purpose}</p>
-                <a href="#">View Details</a>
+                <a href="property.html?id=${property.id">View Details</a>
             </div>
         `;
     });
