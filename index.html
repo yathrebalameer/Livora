@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Livora | Real Estate Marketplace</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Livora</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="listings.html" data-en="Properties" data-ar="العقارات">Properties</a></li>
+                <li><a href="#" data-en="Agents" data-ar="الوكلاء">Agents</a></li>
+                <li><a href="#" data-en="About" data-ar="من نحن">About</a></li>
+                <li><a href="#" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="langToggle">AR</button>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">Find Your Dream Property in Saudi Arabia</h1>
+            <p id="heroText">
+                Luxury villas, apartments, and rental properties across Riyadh, Jeddah, and more.
+            </p>
+            <a href="listings.html" class="btn" id="heroBtn">Browse Properties</a>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <h2 id="searchHeading">Advanced Property Search</h2>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="City" />
+
+            <select id="purpose">
+                <option>Buy</option>
+                <option>Rent</option>
+            </select>
+
+            <select id="type">
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Office</option>
+                <option>Land</option>
+            </select>
+
+            <select id="price">
+                <option>Any Price</option>
+                <option>Below 500,000 SAR</option>
+                <option>500,000 - 1M SAR</option>
+                <option>1M - 3M SAR</option>
+                <option>3M+ SAR</option>
+            </select>
+
+            <select id="bedrooms">
+                <option>Bedrooms</option>
+                <option>1+</option>
+                <option>2+</option>
+                <option>3+</option>
+                <option>4+</option>
+                <option>5+</option>
+            </select>
+
+            <button onclick="searchProperty()">Search</button>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <h2 id="featuredTitle">Featured Properties</h2>
+
+        <div class="property-grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="">
+                <h3>Luxury Villa - Riyadh</h3>
+                <p>SAR 3,200,000</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" alt="">
+                <h3>Modern Apartment - Jeddah</h3>
+                <p>SAR 1,100,000</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="">
+                <h3>Premium Villa - Khobar</h3>
+                <p>SAR 2,800,000</p>
+                <a href="#">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+ 
+
+    <footer>
+        <p>© 2026 Livora. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livora | Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Livora</div>
+            <ul class="nav-links show">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h2>Find Properties</h2>
+
+        <div class="search-box">
+            <input type="text" id="searchCity" placeholder="City">
+
+            <select id="searchType">
+                <option value="">All Types</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Office</option>
+            </select>
+
+            <select id="searchPurpose">
+                <option value="">Buy / Rent</option>
+                <option>Buy</option>
+                <option>Rent</option>
+            </select>
+
+            <button onclick="filterProperties()">Search</button>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <h2>Available Properties</h2>
+        <div class="property-grid" id="propertyContainer"></div>
+    </section>
+
+    <script src="js/listings.js"></script>
+</body>
+</html>
